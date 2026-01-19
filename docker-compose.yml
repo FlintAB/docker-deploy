@@ -3,6 +3,7 @@ services:
   # Backend
   # --------------------
   backend:
+    image: flinths/kupipodariday-backend:latest 
     container_name: kupipodariday-backend
     build:
       context: ./backend
@@ -21,6 +22,7 @@ services:
   # Frontend
   # --------------------
   frontend:
+    image: flinths/kupipodariday-frontend:latest
     container_name: kupipodariday-frontend
     build:
       context: ./frontend
