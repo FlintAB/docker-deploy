@@ -1,7 +1,7 @@
 # Докеризация приложения
 
-IP: 178.154.198.133
+IP: 178.154.198.133 (https)
 
-Frontend: wishlist.flint.nomorepartiessbs.ru
+Frontend: https://wishlist.flint.nomorepartiessbs.ru
 
-Backend: api.wishlist.flint.nomorepartiessbs.ru
+Backend: https://api.wishlist.flint.nomorepartiessbs.ru
