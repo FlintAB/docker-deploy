@@ -50,6 +50,18 @@ services:
       timeout: 5s
       retries: 5
       start_period: 5s
+
+# --------------------
+# Adminer
+# --------------------
+adminer:
+  image: adminer
+  restart: always
+  port:
+    - 8080:8080
+  depends_on:
+    -database
+
 # --------------------
 # Volumes
 # --------------------
