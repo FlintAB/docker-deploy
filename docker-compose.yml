@@ -5,6 +5,7 @@ services:
   backend:
     image: flinths/docker-deploy-backend:latest
     container_name: kupipodariday-backend
+    restart: unless-stopped
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -24,6 +25,7 @@ services:
   frontend:
     image: flinths/docker-deploy-frontend:latest
     container_name: kupipodariday-frontend
+    restart: unless-stopped
     build:
       context: ./frontend
       dockerfile: Dockerfile
@@ -40,6 +42,7 @@ services:
   database:
     container_name: kupipodariday-db
     image: postgres:15-alpine
+    restart: unless-stopped
     env_file:
       - ./.env  # Загружаю переменные Postgres из бэка
     volumes:
